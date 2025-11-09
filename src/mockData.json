@@ -1,0 +1,108 @@
+{
+  "student": {
+    "name": "akshra",
+    "college": "SRM University",
+    "district": "Chennai",
+    "aadhaarLinked": true,
+    "dbtSeeded": false,
+    "bankName": "State Bank of India",
+    "accountLast4": "4321",
+    "scholarshipProfile": {
+      "annualFamilyIncome": 180000,
+      "category": "OBC",
+      "classYear": "2nd Year"
+    }
+  },
+  "scholarships": [
+    { 
+      "id": 1, 
+      "title": "Merit Scholarship", 
+      "amount": 20000, 
+      "eligibility": {"minIncome": 0, "category": "any"},
+      "deadline": "2025-03-15",
+      "status": "eligible"
+    },
+    { 
+      "id": 2, 
+      "title": "Minority Support", 
+      "amount": 15000, 
+      "eligibility": {"minIncome": 0, "category": "Minority"},
+      "deadline": "2025-02-28",
+      "status": "not_eligible"
+    },
+    { 
+      "id": 3, 
+      "title": "Low-Income Grant", 
+      "amount": 25000, 
+      "eligibility": {"minIncome": 0, "maxIncome": 200000, "category": "any"},
+      "deadline": "2025-04-30",
+      "status": "eligible"
+    }
+  ],
+  "guidanceSteps": [
+    { 
+      "id": 1, 
+      "title": "Collect Aadhaar & Bank Passbook", 
+      "desc": "Keep your Aadhaar and bank passbook ready.", 
+      "docs": ["Aadhaar front/back", "Bank passbook"], 
+      "branch": "SBI - Anna Salai branch, 2.3 km",
+      "completed": true,
+      "icon": "FileText",
+      "color": "green",
+      "benefit": "Having documents ready ensures smooth verification process at the bank. You'll avoid multiple visits and can complete the DBT linking in one go. Bank officials can quickly verify your identity and account details.",
+      "consequence": "Without proper documents, you'll face delays and rejection at the bank. Multiple visits will be required, wasting time and money. Your scholarship applications may get delayed or rejected due to incomplete DBT setup."
+    },
+    { 
+      "id": 2, 
+      "title": "Visit nearest branch", 
+      "desc": "Ask for DBT seeding or account linking form.", 
+      "docs": ["Aadhaar", "Passbook"], 
+      "branch": "SBI - Anna Salai branch, 2.3 km",
+      "completed": false,
+      "icon": "MapPin",
+      "color": "blue",
+      "benefit": "Visiting the branch allows you to get the official DBT linking form and receive guidance from bank staff. You can clarify doubts, understand the process better, and ensure all requirements are met for successful DBT activation.",
+      "consequence": "Skipping this step means you cannot proceed with DBT activation. All scholarship disbursements will be blocked, and you'll miss out on financial aid opportunities. Your account will remain unlinked to the government benefit system."
+    },
+    { 
+      "id": 3, 
+      "title": "Fill form & submit", 
+      "desc": "Fill the bank's linking form and submit to officer.", 
+      "docs": ["Filled form", "ID proof"], 
+      "branch": "SBI - Anna Salai branch, 2.3 km",
+      "completed": false,
+      "icon": "CheckCircle",
+      "color": "purple",
+      "benefit": "Successfully submitting the completed form activates DBT on your account. You'll receive scholarships directly without delays, get SMS notifications for all transactions, and have a secure, transparent way to receive government benefits.",
+      "consequence": "Incomplete or incorrect form submission will result in DBT activation failure. Scholarship payments will be blocked, causing financial hardship. You may miss scholarship deadlines while resolving form issues, potentially losing entire academic year funding."
+    }
+  ],
+  "districtStats": { 
+    "withoutDBT": 40, 
+    "collegeEnabled": 90,
+    "totalStudents": 5000,
+    "dbtEnabled": 60
+  },
+  "faq": [
+    { 
+      "q": "What is DBT?", 
+      "a": "DBT (Direct Benefit Transfer) ensures scholarships go directly into your bank account." 
+    },
+    { 
+      "q": "How do I link DBT?", 
+      "a": "Submit your Aadhaar and passbook at your bank branch." 
+    },
+    { 
+      "q": "What if DBT is not enabled?", 
+      "a": "You may miss out on eligible scholarships until you seed Aadhaar." 
+    },
+    {
+      "q": "How long does DBT seeding take?",
+      "a": "DBT seeding typically takes 3-5 working days to complete after submission."
+    },
+    {
+      "q": "Can I apply for scholarships without DBT?",
+      "a": "Most scholarships require DBT-enabled accounts for direct transfer of funds."
+    }
+  ]
+}
